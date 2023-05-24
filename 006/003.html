@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {
+            background-color: rgb(131, 196, 196);
+            color: #d43131;
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: wheat;
+        }
+        p {
+            font: bold 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1> <!--- Comentário -->
+    <p>Curse broken!</p>
+    <script>    
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+
+        /* Number.parseInt(var) transforma o valor para um Number inteiro,
+        Number.parseFloat(var) para real. Number(var) pode ser usado
+        para ambas situações.
+
+        Para converter em string, temos duas opções:
+        
+        n.toString()
+        String(var)
+        */
+
+        var soma = n1 + n2
+
+        // Método por concatenação. 
+        // window.alert('A soma dos valores é: ' + soma + '!')
+
+        // Método por placeholder/template string.
+        window.alert(`A soma dos valores é: ${soma}!`)
+
+    </script>
+</body>
+</html>

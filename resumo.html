@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo JavaScript</title>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <h1> RESUMO BÁSICO DE JAVASCRIPT 
+
+    </h1>
+        window.alert('First Message!') // Mensagem de alerta. <br>
+        <br>
+        window.confirm('JS are good?') // Janela de confirmação. <br> 
+        <br>
+        window.prompt("What's your name?") // Janela de pergunta. <br>
+        <br> 
+        As partes "Head" e "Body" são referentes a área de HTML.
+        A parte "Style" é referente a de CSS e "Script", a de JS. <br>
+        <br>
+        Para tecer comentários na parte de JavaScript e CSS, utiliza-se
+        a seguinte estrutura: /* (comentário) */ e em HTML: maior quê,
+        exclamação e dois traços. <br>
+        <br>
+        Para criar uma variável, podemos utilizar as expressões "var", 
+        "let" ou "const". Vale destacar as seguintes regras: <br>
+        Não pode iniciar com números, não podem conter espaços e 
+        não podem ser palavras reservadas. <br>
+        <br>
+        Para transformar uma váriavel em number, utilizamos a expressão
+        Number.parseInt (para transformar, obrigatoriamente, em inteiro)
+        Number.parseFloat (para transformar em real,
+        números com vírgula ou ponto flutuante). Também podemos utilizar
+        simplesmente a expressão <strong>Number(var)</strong> e trabalhar
+        com ambos.
+
+        Já para transformar em string, temos duas opções: <br>
+        n.toString() <br>
+        str() <br>
+        <br>
+
+        Ao utilizar uma variável em uma frase, temos algumas oções para 
+        inseri-la, como: <br>
+        <br>
+        Método por concatenação, utilizando o operador de adição (+),
+        demonstrado no seguinte exemplo: window.alert('A soma dos valores
+        é: ' + soma + '!') <br>
+        <br>
+        Método por template string/placeholder, inserindo a estrutura
+        ${var}, demonstrado em: window.alert(`A soma dos valores é: 
+        ${soma}!`). Nesse caso vale destacar que deve-se utilizar crase. <br>
+        <br>
+        Alguns comandos para formatação ou utilidades extra: <br>
+        <br>
+        n.toUpperCase(), coloca o valor atribuído em maiúsculas. <br>
+        n.toLowerCase(), coloca o valor em minúsculas. <br>
+        n.length, exibe a quantidade de caracteres. <br>
+        n.toLocaleString, formata um número de acordo com a nacionalidade. <br>
+        n.toFixed(n), altera a quantidade de casas decimais. <br>
+        typeof(n), exibe o tipo de uma variável. <br>
+        <br>
+        Sobre os operadores, podemos destacar 5 tipos básicos: <br>
+        Aritméticos; <br>
+        Atribuição; <br>
+        Relacionais; <br>
+        Lógicos; <br>
+        Ternário; <br>
+        <br>
+        Dentre os aritméticos, temos o símbolo de adição (+), que serve
+        para soma (ou concatenação, como visto anteriormente). Temos 
+        o símbolo de subtração (-), para subtrair. Asterisco (*), para
+        multiplicação. Barra (/) para divisão. Porcentagem (%) para 
+        calcular o resto de uma divisão e dois asteriscos (**) para 
+        potenciação. <br>
+        <br>
+        A seguir, temos as atribuições simples e auto-atribuições 
+        utilizando o operador que é o sinal de igualdade (=), que
+        como o próprio nome sugere, tem a função de atribuir um valor
+        a uma variável. As auto-atribuições fazem uso desse operador
+        juntamente aos operadores aritméticos, como demonstrado a seguir:
+       <br>  1. var n = 3 <br> 2. n = n + 4 <br>
+       Na etapa 2, o n terá o valor de 7. Visto que na primeira foi o 
+       atribuído o valor de 3, e consecutivamente, acrescentado de 4.
+       O mesmo é válido para outros operadores. Podemos ainda simplificar
+       essa expressão utilizando a seguinte estrutura: <br>
+       n += 4. <br>
+       O valor de n será o mesmo do anterior (7), porém obtido através 
+       de uma estrutura mais simples. E por fim, podemos usar
+       pré/pós-incrementos/decrementos, utilizando da seguinte forma: <br>
+       1. var n = 3 <br> 2. n++ <br>
+       Na etapa 2, n terá o valor de 4, pois foi incrementado em 1. <br>
+       <br>
+       A seguir, temos os operadores relacionais: <br>
+       Maior quê (>); <br> Menor quê (<); <br> Maior ou igual a (>=); <br> Menor ou igual a
+       (<=); <br> Equivale/Igual a (==); <br> Diferente de (!=); <br>
+       O resultado para cada operador relacional será sempre um valor
+       booleano (true ou false). <br>
+       <br>
+        Um destaque para o operador de identidade (===), que compara
+        também em tipo. Então, em uma situação de relação entre 5 === '5',
+        o resultado será false, devido aos tipos serem distintos. <br> <br>
+        Dentro dos operadores lógicos, temos: <br>
+        (!), para negação; <br>
+        (&&), para conjunção; <br>
+        (||), para disjunção. <br> <br>
+        (!), como o nome sugere, representa negação. (&&) é equivalente
+        a um "e", em uma situação em que ambas as necessidades devem
+        ser atendidas. (||) é equivalente a um "ou", que pede apenas
+        que alguma das necessidades sejam atendidas. A ordem de
+        precedência desses operadores é a mesma da ordem de apresentação
+        acima. <br> <br>
+        O operador ternário é formado por uma estrutura composta dos
+        símbolos de interrogação (?) e dois pontos (:). Exemplo da
+        estrutura em sequência: <br>
+        1. var média = 6.0 <br> 2. média > 7?'APROVADO': 'REPROVADO' <br>
+        O resultado dessa operação seria false ou REPROVADO, isso porquê
+        não é atendida a exigência. Para facilitar a compreensão,
+        podemos ler da seguinte forma: <br> Se a média for maior que (>)
+        7, o valor será verdadeiro, true (APROVADO), caso contrário,
+        será negativo, false (REPROVADO). <br>
+        Como a média era menor do que 7, o valor retornado foi negativo.
+
+    <script>
+    
+
+    </script>
+    
+</body>
+</html>
